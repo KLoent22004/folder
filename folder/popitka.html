@@ -1,132 +1,245 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Orar USARB</title>   
-     <link rel="stylesheet" href="tut.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo 2.png" type="image/x-icon">
+    <title>Orar USARB</title>
+    <link rel="stylesheet" href="tut.css">
+</head>
+<body>
+    <section>
+        <h1>Orarul Cursurilor</h1>
+        
+        <div class="who-are-you">
+            <h3>Grupe</h3>
+            <h3>Profesori</h3>
+            <h3>Aule</h3>
+        </div>
+        
+        <div class="filter">
+            <h3>Regim pentru student</h3>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
 
-    <body>
- <h1> Orar cursurilor </h1>
- <div>
-    <button> grupe</button>
-    <button> profesor</button>
-    <button> anule</button>
- </div>
+        <div class="search-div">
+            <div><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="search-icon"><circle fill="none" stroke="#000" stroke-width="1.1" cx="9" cy="9" r="7"></circle><path fill="none" stroke="#000" stroke-width="1.1" d="M14,14 L18,18 L14,14 Z"></path></svg></div>
+            <input type="text" class="search-zone">
+        </div>
+        
 
-  <input type="text"> </input></p>
-  
-    <select>
-        <option value="-1">Ziua</option>slot
-        <option value="0">Luni</option>slot
-        <option value="1">Marți</option>slot
-        <option value="2">Miercuri</option>slot
-        <option value="3">Joi</option>slot
-        <option value="4">Vineri</option>slot
-        <option value="5">Sîmbătă</option>slot
-        <option value="6">Duminică</option>slot
-    </select>
+        <div class="result-zone"></div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>...</th>
-                <th class="uk-background-green uk-width-1-8 uk-text-center uk-padding-remove white-border">1</th>              
-                <th class="uk-background-green uk-width-1-8 uk-text-center uk-padding-remove white-border">2</th>
-                <th class="uk-background-green uk-width-1-8 uk-text-center uk-padding-remove white-border">3</th>
-                <th class="uk-background-green uk-width-1-8 uk-text-center uk-padding-remove white-border">4</th>
-                <th class="uk-background-green uk-width-1-8 uk-text-center uk-padding-remove white-border">5</th>
-                <th class="uk-background-green uk-width-1-8 uk-text-center uk-padding-remove white-border">6</th>
-                <th class="uk-background-green uk-width-1-8 uk-text-center uk-padding-remove white-border">7</th>
+        <select name="" id="day-of-week">
+            <option value="">Ziua</option>
+            <option value="">Luni</option>
+            <option value="">Marti</option>
+            <option value="">Miercuri</option>
+            <option value="">Joi</option>
+            <option value="">Vineri</option>
+            <option value="">Simbata</option>
+            <option value="">Duminica</option>
+        </select>
 
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td data-id="weekTrigger" class="uk-background-green uk-text-center shortDay uk-padding-remove">L - 4</td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-            </tr>
-            <tr>
-                <td data-id="weekTrigger" class="uk-background-green uk-text-center shortDay uk-padding-remove">Ma - 5</td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-            </tr>
-            <tr>
-                <td data-id="weekTrigger" class="uk-background-green uk-text-center shortDay uk-padding-remove">Mi - 6</td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-            </tr>
-            <tr>
-                <td data-id="weekTrigger" class="uk-background-green uk-text-center shortDay uk-padding-remove">J - 7</td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-            </tr>
-            <tr>
-                <td data-id="weekTrigger" class="uk-background-green uk-text-center shortDay uk-padding-remove">V - 8</td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove timetableWeek" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-            </tr>
-            <tr>
-                <td data-id="weekTrigger" class="uk-background-green uk-text-center shortDay uk-padding-remove">S - 9</td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-            </tr>
-            <tr>
-                <td data-id="weekTrigger" class="uk-background-green uk-text-center shortDay uk-padding-remove">D - 10</td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-                <td class="uk-width-1-8 uk-text-center uk-background-white uk-padding-remove" style="background-color: white;"></td>
-            </tr>
-        </tbody>
-    </table>
+        <select name="" id="week-of-year">
+            <option value="-1">Săptămîna</option>
+            <option value="1" class="initial">1 (2.9.2024 - 8.9.2024)</option>
+            <option value="2" class="initial">2 (9.9.2024 - 15.9.2024)</option>
+            <option value="3" class="initial">3 (16.9.2024 - 22.9.2024)</option>
+            <option value="4" class="initial">4 (23.9.2024 - 29.9.2024)</option>
+            <option value="5" class="initial">5 (30.9.2024 - 6.10.2024)</option>
+            <option value="6" class="initial">6 (7.10.2024 - 13.10.2024)</option>
+            <option value="7" class="initial">7 (14.10.2024 - 20.10.2024)</option>
+            <option value="8" class="initial">8 (21.10.2024 - 27.10.2024)</option>
+            <option value="9" class="initial">9 (28.10.2024 - 3.11.2024)</option>
+            <option selected="selected" value="10" class="initial">10 (4.11.2024 - 10.11.2024)</option>
+            <option value="11" class="initial">11 (11.11.2024 - 17.11.2024)</option>
+            <option value="12" class="initial">12 (18.11.2024 - 24.11.2024)</option>
+            <option value="13" class="initial">13 (25.11.2024 - 1.12.2024)</option>
+            <option value="14" class="initial">14 (2.12.2024 - 8.12.2024)</option>
+            <option value="15" class="initial">15 (9.12.2024 - 15.12.2024)</option>
+            <option value="16" class="initial">16 (16.12.2024 - 22.12.2024)</option>
+            <option value="17" class="initial">17 (23.12.2024 - 29.12.2024)</option>
+            <option value="18" class="initial">18 (30.12.2024 - 5.1.2025)</option>
+            <option value="19" class="initial">19 (6.1.2025 - 12.1.2025)</option>
+            <option value="20" class="initial">20 (13.1.2025 - 19.1.2025)</option>
+            <option value="21" class="initial">21 (20.1.2025 - 26.1.2025)</option>
+        </select>
 
-    <div id="tableLegend" class="uk-flex uk-flex-center uk-flex-wrap">
-        <p class="text-white">P - Prelegere</p>
-        <p class="text-white">S - Seminar</p>
-        <p class="text-white">L - Laborator</p>
-        <p class="text-white">PC - Proiect de Curs</p>
-        <p class="text-white">EP - Evaluare periodică</p>
-        <p class="text-white">C - Consultație</p>
-        <p class="text-white">E - Examinare</p>
-        <p class="text-white">R - Reexaminare</p>
-        <p class="text-white">SP - Seminar prealabil</p>
-        <p class="text-white">ST - Seminar de totalizare</p>
-    </div>
-    </body>
+        <table id="shedule1">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>L - 4</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Ma - 5</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>Mi - 6</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>J - 7</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>V - 8</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>S - 9</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>D - 10</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="instructions">
+            <h5>P - Prelegere</h5>
+            <h5>S - Seminar</h5>
+            <h5>L - Laborator</h5>
+            <h5>PC - Proiect de Curs</h5>
+            <h5>EP - Evaluarea periodica</h5>
+            <h5>C - Consultație</h5>
+            <h5>E - Examinare</h5>
+            <h5>R - Reexaminare</h5>
+            <h5>SP - Seminar prealabil</h5>
+            <h5>ST - Seminar de totalizare</h5>
+        </div>
+
+        <div class="buttons">
+            <a href="#">Descarcă orar
+                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="file-pdf"><rect fill="none" stroke="#000" width="13" height="17" x="3.5" y="1.5"></rect><path d="M14.65 11.67c-.48.3-1.37-.19-1.79-.37a4.65 4.65 0 0 1 1.49.06c.35.1.36.28.3.31zm-6.3.06l.43-.79a14.7 14.7 0 0 0 .75-1.64 5.48 5.48 0 0 0 1.25 1.55l.2.15a16.36 16.36 0 0 0-2.63.73zM9.5 5.32c.2 0 .32.5.32.97a1.99 1.99 0 0 1-.23 1.04 5.05 5.05 0 0 1-.17-1.3s0-.71.08-.71zm-3.9 9a4.35 4.35 0 0 1 1.21-1.46l.24-.22a4.35 4.35 0 0 1-1.46 1.68zm9.23-3.3a2.05 2.05 0 0 0-1.32-.3 11.07 11.07 0 0 0-1.58.11 4.09 4.09 0 0 1-.74-.5 5.39 5.39 0 0 1-1.32-2.06 10.37 10.37 0 0 0 .28-2.62 1.83 1.83 0 0 0-.07-.25.57.57 0 0 0-.52-.4H9.4a.59.59 0 0 0-.6.38 6.95 6.95 0 0 0 .37 3.14c-.26.63-1 2.12-1 2.12-.3.58-.57 1.08-.82 1.5l-.8.44A3.11 3.11 0 0 0 5 14.16a.39.39 0 0 0 .15.42l.24.13c1.15.56 2.28-1.74 2.66-2.42a23.1 23.1 0 0 1 3.59-.85 4.56 4.56 0 0 0 2.91.8.5.5 0 0 0 .3-.21 1.1 1.1 0 0 0 .12-.75.84.84 0 0 0-.14-.25z"></path></svg>            </a>
+            <a href="#">Examene
+                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="print"><polyline fill="none" stroke="#000" points="4.5 13.5 1.5 13.5 1.5 6.5 18.5 6.5 18.5 13.5 15.5 13.5"></polyline><polyline fill="none" stroke="#000" points="15.5 6.5 15.5 2.5 4.5 2.5 4.5 6.5"></polyline><rect fill="none" stroke="#000" width="11" height="6" x="4.5" y="11.5"></rect><rect width="8" height="1" x="6" y="13"></rect><rect width="8" height="1" x="6" y="15"></rect></svg>
+            </a>
+            <a href="#">Planificare
+                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="database"><ellipse fill="none" stroke="#000" cx="10" cy="4.64" rx="7.5" ry="3.14"></ellipse><path fill="none" stroke="#000" d="M17.5,8.11 C17.5,9.85 14.14,11.25 10,11.25 C5.86,11.25 2.5,9.84 2.5,8.11"></path><path fill="none" stroke="#000" d="M17.5,11.25 C17.5,12.99 14.14,14.39 10,14.39 C5.86,14.39 2.5,12.98 2.5,11.25"></path><path fill="none" stroke="#000" d="M17.49,4.64 L17.5,14.36 C17.5,16.1 14.14,17.5 10,17.5 C5.86,17.5 2.5,16.09 2.5,14.36 L2.5,4.64"></path></svg>
+            </a>
+        </div>
+
+        <div id="info-zone">Serviciul este inactiv între ore 23:00 și 3:00</div>
+    </section>
+    <section>
+        <div id="logo">
+            <img src="logo_usarb.png" alt="">
+        </div>
+        <h2>UNIVERSITATEA DE STAT „ALECU RUSSO” DIN BĂLȚI</h2>
+        <table id="shedule2">
+            <tbody>
+                <tr>
+                    <th>
+                        <div>8:00</div>
+                        <div>9:30</div>
+                    </th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>
+                        <div>9:45</div>
+                        <div>11:15</div>
+                    </th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>
+                        <div>11:30</div>
+                        <div>13:00</div>
+                    </th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>
+                        <div>13:15</div>
+                        <div>14:45</div>
+                    </th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>
+                        <div>15:00</div>
+                        <div>16:30</div>
+                    </th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>
+                        <div>16:45</div>
+                        <div>18:15</div>
+                    </th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>
+                        <div>18:30</div>
+                        <div>20:00</div>
+                    </th>
+                    <th></th>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
 </html>
