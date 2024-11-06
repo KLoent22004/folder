@@ -1,0 +1,95 @@
+
+* {   padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body > *,
+section > * {
+    margin-top: 20px;
+}
+
+body {
+    background: lightcoral;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 20px;
+    background: white;
+    color: gray;
+    height: 60px;
+    width: 450px;
+    align-content: center;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    color: white;
+}
+
+.buttons a:first-child {
+    background: #25975A;
+}
+.buttons a:nth-child(2) {
+    background: #f0506e;
+}
+.buttons a:last-child {
+    background: rgb(123, 70, 105);
+}
+
+.buttons a:not(:first-child) {
+    margin-left: 10px;
+}
+
+.buttons svg {
+    position: absolute;
+}
+
+table {
+    width: 100%;
+    height: 200px;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+
+.hto_ti_takoi h3 {
+    background: #25975A;
+    height: 40px;
+    width: 120px;
+    align-content: center;
+    text-align: center;
+}
+
+h5 {
+    font-size: 12px;
+    color: white;
+    margin: 0 0 20px 10px;
+}
+
+.buttons {
+    height: 20px;
+}
+
+.buttons a {
+    color: white;
+    font-size: 14px;
+    font-family: 'Times New Roman';
+    text-decoration: none;
+    border-radius: 3px;
+    background: black;
+    padding: 5px 25px 5px 10px;
+    border: 1px solid white;
+}
+
