@@ -10,7 +10,7 @@ section > * {
 }
 
 body {
-    background: lightcoral;
+    background-image: url( https://lh6.googleusercontent.com/proxy/jt67nM-q3Jc2YQ8TiXIgv5sACBdsH-4x9GZw_NQy2dH8PvB4-wHrrtLo_gy_kKjoMzYiXm604FGY9BZN-lYuIvvwkS-WBO5keH8a0RwuRVMYVg);
     display: flex;
     justify-content: center;
     background-size: cover;
