@@ -1,0 +1,413 @@
+* {   
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body > * {
+    margin-top: 20px;
+}
+
+body {
+    background-image: url( https://noi.md/uploads/newsthumbs/760_500/2023_10_30/710997.webp);
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 20px;
+    background: white;
+    color: gray;
+    height: 60px;
+    width: 700px;
+    align-content: center;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    color: white;
+}
+
+
+.buttons a:first-child {
+    background: #25975A;
+}
+.buttons a:nth-child(2) {
+    background: #f0506e;
+}
+.buttons a:last-child {
+    background: rgb(123, 70, 105);
+}
+
+.buttons a:not(:first-child) {
+    margin-left: 10px;
+}
+
+.buttons svg {
+    position: absolute;
+}
+
+
+.button {
+    
+    height: 40px;
+    width: 120px;
+    align-content: center;
+    text-align: center;
+}
+
+h5 {
+    font-size: 12px;
+    color: white;
+    margin: 0 0 20px 10px;
+}
+
+.buttons {
+    height: 20px;
+}
+
+.buttons a {
+    color: white;
+    font-size: 14px;
+    font-family: 'Times New Roman';
+    text-decoration: none;
+    border-radius: 3px;
+    background: black;
+    padding: 5px 25px 5px 10px;
+    border: 1px solid white;
+}
+
+table {
+    width: 100%;
+    height: 200px;
+    border-collapse: collapse;
+    border-spacing: 12px;
+}
+
+tr th:first-child,
+thead th:not(:first-child) {
+    color: white;
+    background: #25975A;
+    border: 1px solid white;
+}
+
+#shedule1 tr th:first-child {
+    width: 120px;
+}
+
+#shedule1 thead th:not(:first-child) {
+    width: 50;
+}
+
+#shedule1, #shedule2 {
+    box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.8);
+} 
+
+tbody tr th:not(:first-child) {
+    background: white;
+    border: 1px solid black;
+}
+
+#shedule2 tbody tr th:first-child {
+    width: 140px;
+    height: 95px;
+}
+
+#shedule2 tbody tr th:first-child div {
+    font-size: 15px;
+    margin: 5px;
+}
+
+#shedule2 tbody tr th:not(:first-child) {
+    width: 565px;
+}
+
+#shedule1 tbody tr th:hover {
+    background: #f0506e;
+    border: 1px solid white;
+}
+
+.switch {
+    position: relative;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.button{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.button button {
+    background: #25975A;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+}
+
+.button button:hover,
+.button button:focus {
+    background: white;
+    color: black;
+}
+
+.search-zone,
+#week-of-year {
+    border: none;
+    height: 40px;
+    width: 100%;
+}
+
+.instructions {
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#week-of-year,
+#day-of-week {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    color: #666;
+    border: none;
+    background: white;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+}
+
+#day-of-week option {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+
+.result-zone {
+    background: white;
+    height: 100px;
+    width: 100%;
+}
+
+#info-zone {
+    align-content: center;
+    background: #edfbf6;
+    color: #32d296;
+    font-size: 16px;
+    padding: 15px 30px 15px 15px;
+    width: 100%;
+}
+
+* section:not(:first-child) {
+    margin-left: 40px;
+}
+
+#logo {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+#logo img {
+    height: 100%;
+}
+
+.search-div {
+    display: flex;
+}
+
+.uk-search-icon {
+    color: #25975A !important;
+}
+
+.search-div {
+    position: relative;
+    background: white;
+}
+
+.search-div div:first-child {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 120px repeat(7, 1fr);
+    margin-top: 20px;
+    border: 1px solid rgb(3, 3, 3);
+
+ }
+ 
+ .table-header {
+    display: contents;  
+
+ }
+ 
+ .table-header div {
+    background-color: #25975a;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    
+ }
+ 
+ .table-row {
+    display: contents;
+
+ }
+ 
+ .table-row div {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(3, 3, 3);
+
+ }
+ 
+ .table-row .time {
+    background-color: #25975a;
+    color: white;
+    font-weight: bold;
+
+ }
+ 
+ .table-row div:hover {
+    background-color: #cae88b;
+    
+ }
+ 
+ .table-row-rith {
+    display: contents;
+
+ }
+
+ .table-row-rith th {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(3, 3, 3);
+
+ }
+ 
+ .table-row-rith .time {
+    background-color: #25975a;
+    color: white;
+    font-weight: bold;
+
+ }
+ 
+ .table-row-rith th:hover {
+    background-color: #9ddd12;
+
+ }
+
+ #shedule2{
+     display: grid;
+     grid-template-columns: 150px 550px;
+     grid-template-rows: repeat(7, 75px);
+     background: white ;
+     
+ }
+
+ #shedule2 div:not(:nth-child(2n)) {
+    background: #25975A !important;
+
+ }
+
+ #shedule2 div{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ #shedule2 div:hover{
+    background-color: #9ddd12;
+
+ }
+
+ .switch {
+    position: relative;
+    margin-left: 100px;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #0bf01e;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #0bf01e;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  h6{
+      font-size: 20px;
+    color: white; 
+ }
